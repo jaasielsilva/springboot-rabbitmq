@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste RabbitMQ</title>
+</head>
+<body>
+  <h2>Processamento de Chamados</h2>
+
+  <button onclick="enviarLote()">Enviar 10 mensagens</button>
+
+  <p id="mensagem">Aguardando envio...</p>
+  <p id="status">Processados: 0 / 0</p>
+
+  <script>
+    async function enviarLote() {
+      const resposta = await fetch('/lote');
+      const texto = await resposta.text();
+
+      document.getElementById('mensagem').innerText = texto;
+
+      acompanharStatus();
+    }
+
+    function acompanharStatus() {
+      const intervalo = setInterval(async () => {
+        const res = await fetch('/status');
+        const data = await res.json();
+
+        document.getElementById('status').innerText =
+          `Processados: ${data.processados} / ${data.total}`;
+
+        if (data.total > 0 && data.processados >= data.total) {
+          clearInterval(intervalo);
+          document.getElementById('mensagem').innerText = 'Processamento concluído!';
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
