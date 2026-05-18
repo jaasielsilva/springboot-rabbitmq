@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: ifood-pedidos
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ifood_pedidos?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=America/Sao_Paulo
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:12345}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  thymeleaf:
+    cache: false
+
+server:
+  port: 8080
+
+ifood:
+  mock-enabled: ${IFOOD_MOCK_ENABLED:true}
+  polling-enabled: ${IFOOD_POLLING_ENABLED:false}
+  polling-interval-ms: ${IFOOD_POLLING_INTERVAL_MS:30000}
+
+  client-id: ${IFOOD_CLIENT_ID:}
+  client-secret: ${IFOOD_CLIENT_SECRET:}
+  refresh-token: ${IFOOD_REFRESH_TOKEN:}
+  merchant-id: ${IFOOD_MERCHANT_ID:2d1fbaca-5e91-44bf-bcac-7d14e553422f}
+
+  api-base-url: ${IFOOD_API_BASE_URL:https://merchant-api.ifood.com.br}

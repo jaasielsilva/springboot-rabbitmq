@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Secrets ###
+.env
+
+### Node (load-test.js) ###
+node_modules/

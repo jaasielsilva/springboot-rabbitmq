@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.example.ifood;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class IfoodPedidosApplicationTests {
 
 	@Test
 	void contextLoads() {

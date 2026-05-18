@@ -1,0 +1,24 @@
+{
+  "name": "springboot-rabbitmq",
+  "version": "1.0.0",
+  "description": "Sistema para receber eventos do iFood, gerenciar o ciclo de vida do pedido e exibir em tempo real.",
+  "main": "load-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaasielsilva/springboot-rabbitmq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jaasielsilva/springboot-rabbitmq/issues"
+  },
+  "homepage": "https://github.com/jaasielsilva/springboot-rabbitmq#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
