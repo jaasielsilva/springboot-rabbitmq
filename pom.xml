@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>ifood-pedidos</artifactId>
+	<artifactId>springboot-ifood-pedidos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ifood-pedidos</name>
-	<description>Integração simples com iFood - receber e visualizar pedidos</description>
+	<name>springboot-ifood-pedidos</name>
+	<description>Spring Boot + iFood — receber pedidos, KDS e gerenciar ciclo na cozinha</description>
 
 	<properties>
 		<java.version>17</java.version>

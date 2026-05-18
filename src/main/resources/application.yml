@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ifood-pedidos
+    name: springboot-ifood-pedidos
 
   datasource:
     url: jdbc:mysql://localhost:3306/ifood_pedidos?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=America/Sao_Paulo

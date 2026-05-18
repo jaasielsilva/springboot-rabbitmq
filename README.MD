@@ -1,6 +1,8 @@
-# iFood Pedidos — Restaurante & Lanchonete
+# springboot-ifood-pedidos
 
 Sistema Spring Boot que **recebe pedidos do iFood**, grava no MySQL e exibe na cozinha em tempo real.
+
+**Repositório:** https://github.com/jaasielsilva/springboot-ifood-pedidos
 
 | O quê | URL |
 |-------|-----|
@@ -93,7 +95,7 @@ Ideal para validar MySQL, Spring e a tela **sem** configurar OAuth.
 ### A.1 — Subir o projeto
 
 ```powershell
-cd C:\caminho\para\springboot-rabbitmq
+cd C:\caminho\para\springboot-ifood-pedidos
 .\mvnw.cmd spring-boot:run
 ```
 
@@ -149,7 +151,7 @@ Use **um único PowerShell** nos passos 1–3 (o `CODE_VERIFIER` some se fechar 
 ### Passo 0 — Preparar ambiente
 
 ```powershell
-cd C:\caminho\para\springboot-rabbitmq
+cd C:\caminho\para\springboot-ifood-pedidos
 ```
 
 - MySQL ligado.
@@ -270,7 +272,7 @@ Salve o arquivo. O `.env` **não** vai para o Git.
 **Opção recomendada — usar `.env`:**
 
 ```powershell
-cd C:\caminho\para\springboot-rabbitmq
+cd C:\caminho\para\springboot-ifood-pedidos
 . .\scripts\load-env.ps1
 .\mvnw.cmd spring-boot:run
 ```
@@ -342,7 +344,7 @@ A tela atualiza sozinha a cada 5 segundos.
 Depois da primeira configuração (Caminho B, Passos 3b + 4):
 
 ```powershell
-cd C:\caminho\para\springboot-rabbitmq
+cd C:\caminho\para\springboot-ifood-pedidos
 . .\scripts\load-env.ps1
 .\mvnw.cmd spring-boot:run
 ```
